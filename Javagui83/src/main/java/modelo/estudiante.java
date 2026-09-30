@@ -12,12 +12,27 @@ public class estudiante {
     private String nombre;
     private double nota1;
     private double nota2;
+   private double resultado;
     
    public estudiante(String nombre, double nota1, double nota2){
    this.nombre =nombre;
    this.nota1= nota1;
    this.nota2= nota2;
+   this.resultado = resultado;
+   
 } 
+
+    public double getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(double resultado) {
+        this.resultado = resultado;
+    }
+
+    public estudiante(double resultado) {
+        this.resultado = resultado;
+    }
 
     public String getNombre() {
         return nombre;
